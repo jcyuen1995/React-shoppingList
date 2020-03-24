@@ -1,0 +1,33 @@
+div.submitbutton {
+    color: black;
+    background-color: white;
+    width: 50vw;
+    display:flex;
+    height: 20vh;
+    padding:5% 0;
+    justify-content:space-evenly;
+}
+
+div.submitbutton input {
+    width: 55%;
+    /* margin:15% 0; */
+    background-color:lightgrey;
+    
+}
+
+div.submitbutton button {
+    width: 30%;
+    /* margin: 15% 0; */
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+div input::placeholder {
+    color: grey;
+    margin-left: 2%; 
+}

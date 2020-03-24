@@ -1,0 +1,14 @@
+table thead {
+    color:white;
+    background-color:black;
+}
+
+div.servings {
+    margin-left: 5%;
+    width: 42%;
+}
+
+table tbody {
+    background-color: white;
+    color:black;
+}

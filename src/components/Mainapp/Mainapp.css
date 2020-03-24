@@ -1,0 +1,7 @@
+div.mainapp {
+    background-color:lightgrey;
+    height: 93vh;
+    display:flex;
+    flex-wrap:wrap;
+    padding: 2% 2%;
+}

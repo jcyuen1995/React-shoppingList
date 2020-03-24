@@ -1,0 +1,17 @@
+header {
+    color: white;
+    background-color: #049bff;
+    height: 7vh;
+    font-weight: 100;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+span {
+    margin: 0 1%;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
