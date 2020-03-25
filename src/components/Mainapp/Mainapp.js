@@ -5,22 +5,24 @@ import Submitbutton from '../Submitbutton/Submitbutton';
 import Table from '../Table/Table';
 import Confirm from '../confirm/Confirm';
 
+//Create by Jonathan Yuen for Web301 at Seneca College
+//This application is a simple shopping list demonstrating state hooks in functional components in ReactJS
+
 const Mainapp = () => {
 
     const [counter, setCounter] = useState(0);
-    const [value, setValue] = useState('');
     const [table, setTable] = useState([{}]);
     const [show, setShow] = useState(false);
 
-    var timeo;
+    var time;
     function timeOut() {
         setShow(false)
     }
     //temp function to chanage state from within another child component 
     //there is a bug for when you close and resubmit immedeitely , the timerout function continues even after closing the window
     function showConfirm(seen) {
-        if(!seen) {setShow(true);  timeo = setTimeout(timeOut,5000)} 
-        if(seen) {setShow(false); clearTimeout(timeo)}
+        if(!seen) {setShow(true);  time = setTimeout(timeOut,5000)} 
+        if(seen) {setShow(false); clearTimeout(time)}
         
     }
 
@@ -30,8 +32,7 @@ const Mainapp = () => {
         <div className = "mainapp">
             <Counter number = {counter} setCounter = {setCounter}/>
             <Table table = {table}/>
-            <Submitbutton 
-                setValue = {setValue} 
+            <Submitbutton
                 counter = {counter} 
                 setTable = {setTable} 
                 table = {table}

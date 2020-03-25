@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Table.css';
 
 const Table = (props) => {
@@ -16,7 +16,12 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     {table.map((desert) => {
+                        //hide the null element from initial state
+                        if(desert.value == null && desert.amount == null) {
+                            return (<></>)
+                        }
                         return (
+                            // create a random key for the map function with a randomizer function
                             <tr key = {Math.random()}>
                                 <td>{desert.value}</td>
                                 <td>{desert.amount}</td>

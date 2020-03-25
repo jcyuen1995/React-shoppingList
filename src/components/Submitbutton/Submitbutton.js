@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Submitbutton.css'
 
 const Submitbutton = (props) => {
-    const { setValue,counter, setTable, showConfirm, table} = props;
+    const { counter, setTable, showConfirm, table} = props;
     const [ name, setName] = useState('')    
     
     return (
@@ -20,8 +20,8 @@ const Submitbutton = (props) => {
                 className = "btn btn-primary" 
                 type = "submit" 
                 onClick = {
+                        //update the datatable with new data and show the confirmation window
                         function(){ 
-                            setValue(name); 
                             setTable([...table, {value:name, amount:counter}]);
                             showConfirm()
                             }
