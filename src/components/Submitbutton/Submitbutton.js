@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Submitbutton.css'
 
 const Submitbutton = (props) => {
-    const { setValue,counter, setTable, table, setShow} = props;
+    const { setValue,counter, setTable, table, showConfirm} = props;
     const [ name, setName] = useState('')
     
     
@@ -24,8 +24,7 @@ const Submitbutton = (props) => {
                         function(){ 
                             setValue(name); 
                             setTable({...table, value:name, amount:counter});
-                            setShow(true); 
-                            setTimeout(()=>{setShow(false)},5000)
+                            showConfirm()
                             }
                         }
             >primary</button>

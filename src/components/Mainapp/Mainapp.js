@@ -11,10 +11,17 @@ const Mainapp = () => {
     const [value, setValue] = useState('');
     const [table, setTable] = useState({});
     const [show, setShow] = useState(false);
+    var timeo;
+    function timeOut() {
+        setShow(false)
+    }
 
-    function showConfirm(show) {
-        if(show) {setShow(!show)}
-        else setShow(show)
+    //temp function to chanage state from within another child component 
+    //there is a bug for when you close and resubmit immedeitely , the timerout function continues even after closing the window
+    function showConfirm(seen) {
+        if(!seen) {setShow(true);  timeo = setTimeout(timeOut,5000)} 
+        if(seen) {setShow(false); clearTimeout(timeo)}
+        
     }
 
     console.log(table);
@@ -28,7 +35,7 @@ const Mainapp = () => {
                 counter = {counter} 
                 setTable = {setTable} 
                 table = {table}
-                setShow = {setShow}
+                showConfirm = {showConfirm}
                 />
             {show?<Confirm showConfirm = {showConfirm}/> : <></>}
         </div>

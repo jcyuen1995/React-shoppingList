@@ -14,8 +14,8 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>{table.value}</td>
+                        <td>{table.amount}</td>
                     </tr>
                 </tbody>
             </table>
