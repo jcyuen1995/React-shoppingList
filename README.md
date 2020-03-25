@@ -1,6 +1,6 @@
 # React-calorie-Tracker
 This application was developed for the use of Web301 at Seneca College <br>
-This application allows a user to type in value and use an interactive counter to save items <br>
+This application allows a user to type in a value and use an interactive counter to save items <br>
 into a shopping list
 
 ## Learning
