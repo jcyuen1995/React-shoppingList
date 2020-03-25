@@ -15,3 +15,7 @@ data state and display all the information from the data object into table rows
 ## Requirements
 This application requires the use of yarn or npm  
 This application also requires an internet connection for bootstrap and Material icons
+
+## Note 
+I did not intend to make this application mobile friendly and was not the point of the <br>
+project. As a result, This application is Not responsive.
