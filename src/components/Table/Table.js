@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Table.css';
 
 const Table = (props) => {
+
     const { table } = props; 
+    
     return (    
         <div className = "servings">
             <table className = "table">
@@ -13,10 +15,14 @@ const Table = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{table.value}</td>
-                        <td>{table.amount}</td>
-                    </tr>
+                    {table.map((desert) => {
+                        return (
+                            <tr key = {Math.random()}>
+                                <td>{desert.value}</td>
+                                <td>{desert.amount}</td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
         </div>

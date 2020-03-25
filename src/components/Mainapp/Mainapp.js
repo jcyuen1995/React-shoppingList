@@ -9,13 +9,13 @@ const Mainapp = () => {
 
     const [counter, setCounter] = useState(0);
     const [value, setValue] = useState('');
-    const [table, setTable] = useState({});
+    const [table, setTable] = useState([{}]);
     const [show, setShow] = useState(false);
+
     var timeo;
     function timeOut() {
         setShow(false)
     }
-
     //temp function to chanage state from within another child component 
     //there is a bug for when you close and resubmit immedeitely , the timerout function continues even after closing the window
     function showConfirm(seen) {

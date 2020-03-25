@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import './Submitbutton.css'
 
 const Submitbutton = (props) => {
-    const { setValue,counter, setTable, table, showConfirm} = props;
-    const [ name, setName] = useState('')
-    
+    const { setValue,counter, setTable, showConfirm, table} = props;
+    const [ name, setName] = useState('')    
     
     return (
         <div className = "submitbutton">
@@ -23,7 +22,7 @@ const Submitbutton = (props) => {
                 onClick = {
                         function(){ 
                             setValue(name); 
-                            setTable({...table, value:name, amount:counter});
+                            setTable([...table, {value:name, amount:counter}]);
                             showConfirm()
                             }
                         }
