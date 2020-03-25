@@ -18,4 +18,4 @@ This application also requires an internet connection for bootstrap and Material
 
 ## Note 
 I did not intend to make this application mobile friendly and was not the point of the <br>
-project. As a result, This application is Not responsive.
+project. As a result, this application is not responsive.
