@@ -4,7 +4,7 @@ div.submitbutton {
     width: 50vw;
     display:flex;
     height: 20vh;
-    padding:5% 0;
+    padding:3% 0;
     justify-content:space-evenly;
 }
 
@@ -12,6 +12,7 @@ div.submitbutton input {
     width: 55%;
     /* margin:15% 0; */
     background-color:lightgrey;
+    font-size: 3rem;
     
 }
 

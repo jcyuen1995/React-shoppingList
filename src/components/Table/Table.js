@@ -2,12 +2,8 @@ import React from 'react';
 import './Table.css';
 
 const Table = (props) => {
-    const { value, confirmedAmount } = props;
-    const data = [];
-    console.log(data);
-
-    return (
-        
+    const { table } = props; 
+    return (    
         <div className = "servings">
             <table className = "table">
                 <thead>
@@ -18,8 +14,8 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{value}</td>
-                        <td>{confirmedAmount}</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

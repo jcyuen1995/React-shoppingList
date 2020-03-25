@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Submitbutton.css'
 
 const Submitbutton = (props) => {
-    const { setValue,counter,setConfirmedAmount } = props;
+    const { setValue,counter, setTable, table, setShow} = props;
     const [ name, setName] = useState('')
+    
     
     return (
         <div className = "submitbutton">
@@ -19,7 +20,15 @@ const Submitbutton = (props) => {
             <button 
                 className = "btn btn-primary" 
                 type = "submit" 
-                onClick = {function(){ setValue(name); setConfirmedAmount(counter)}}>primary</button>
+                onClick = {
+                        function(){ 
+                            setValue(name); 
+                            setTable({...table, value:name, amount:counter});
+                            setShow(true); 
+                            setTimeout(()=>{setShow(false)},5000)
+                            }
+                        }
+            >primary</button>
         </div>
     );
 };
