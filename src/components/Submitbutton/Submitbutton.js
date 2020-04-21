@@ -22,8 +22,9 @@ const Submitbutton = (props) => {
                 onClick = {
                         //update the datatable with new data and show the confirmation window
                         function(){ 
+                            if (name === "") {return 0} else {
                             setTable([...table, {value:name, amount:counter}]);
-                            showConfirm()
+                            showConfirm() }
                             }
                         }
             >primary</button>

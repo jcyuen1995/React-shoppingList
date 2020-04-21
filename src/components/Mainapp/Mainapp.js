@@ -3,7 +3,7 @@ import './Mainapp.css';
 import Counter from '../Counter/counter';
 import Submitbutton from '../Submitbutton/Submitbutton';
 import Table from '../Table/Table';
-import Confirm from '../confirm/Confirm';
+import Confirm from '../Confirm/Confirm';
 
 //Create by Jonathan Yuen for Web301 at Seneca College
 //This application is a simple shopping list demonstrating state hooks in functional components in ReactJS
